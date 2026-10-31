@@ -1,1 +1,58 @@
-Alpaca Image Generator
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <title>Alpaca Image Generator</title>
+</head>
+<body>
+    <header>
+        <h1>Alpaca Image Generator</h1>
+        <p>Welcome to my first JavaScript project!</p>
+    </header>
+    <main>
+        <section aria-labelledby="preview-heading">
+            <h2 id="preview-heading">Alpaca Preview</h2>
+            <div id="alpaca-preview" class="content-panel">
+                <div class="alpaca-stage" role="img" aria-label="Customized alpaca preview">
+                    <img class="alpaca-layer alpaca-background" src="alpaca-generator-assets/alpaca/backgrounds/blue50.png" alt="">
+                    <img class="alpaca-layer alpaca-neck" src="alpaca-generator-assets/alpaca/neck/default.png" alt="">
+                    <img class="alpaca-layer alpaca-leg" src="alpaca-generator-assets/alpaca/leg/default.png" alt="">
+                    <img class="alpaca-layer alpaca-ears" src="alpaca-generator-assets/alpaca/ears/default.png" alt="">
+                    <img class="alpaca-layer alpaca-hair" src="alpaca-generator-assets/alpaca/hair/default.png" alt="">
+                    <img class="alpaca-layer alpaca-eyes" src="alpaca-generator-assets/alpaca/eyes/default.png" alt="">
+                    <img class="alpaca-layer alpaca-mouth" src="alpaca-generator-assets/alpaca/mouth/default.png" alt="">
+                    <img class="alpaca-layer alpaca-nose" src="alpaca-generator-assets/alpaca/nose.png" alt="">
+                    <img class="alpaca-layer alpaca-accessory" src="alpaca-generator-assets/alpaca/accessories/glasses.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="customization-heading">
+            <h2 id="customization-heading">Customize Your Alpaca</h2>
+            <div id="customization-panel" class="content-panel">
+                <div class="action-buttons">
+                    <button type="button" id="randomize-button">Randomize Alpaca</button>
+                    <button type="button" id="download-button">Download Alpaca</button>
+                </div>
+                <h3>Choose the alpaca's</h3>
+                <div class="category-buttons" role="group" aria-label="Customization categories">
+                    <button type="button" data-category="hair">Hair</button>
+                    <button type="button" data-category="ears">Ears</button>
+                    <button type="button" data-category="eyes">Eyes</button>
+                    <button type="button" data-category="mouth">Mouth</button>
+                    <button type="button" data-category="neck">Neck</button>
+                    <button type="button" data-category="leg">Leg</button>
+                    <button type="button" data-category="accessory">Accessories</button>
+                    <button type="button" data-category="background">Background</button>
+                </div>
+                <h3 id="style-heading">Available Styles</h3>
+                <div class="style-options" id="style-options" role="group" aria-labelledby="style-heading" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
